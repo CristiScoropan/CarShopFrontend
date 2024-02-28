@@ -1,0 +1,43 @@
+/* user-list.component.scss */
+
+.user-list {
+    margin-top: 20px;
+  
+    h3 {
+      color: #3498db; /* Blue heading color */
+    }
+  
+    .user-item {
+      background-color: #fff; /* White background */
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+  
+      span {
+        flex: 1;
+      }
+  
+      .update-btn,
+      .delete-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+  
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+  
+      .update-btn img {
+        filter: invert(46%) sepia(92%) saturate(2845%) hue-rotate(336deg) brightness(94%) contrast(85%);
+      }
+  
+      .delete-btn img {
+        filter: invert(23%) sepia(86%) saturate(1227%) hue-rotate(333deg) brightness(87%) contrast(86%);
+      }
+    }
+  }
+  

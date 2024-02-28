@@ -1,0 +1,17 @@
+<!-- user-list.component.html -->
+
+<div class="user-list">
+    <h3>User List</h3>
+    
+    <div *ngFor="let user of users" class="user-item">
+      <span>{{ user.username }}</span>
+      <span>{{ user.email }}</span>
+      <button class="update-btn" (click)="showUpdateForm(user)">
+        <img src="path/to/crayon-icon.png" alt="Update User">
+      </button>
+      <button class="delete-btn" (click)="deleteUser(user)">
+        <img src="path/to/garbage-can-icon.png" alt="Delete User">
+      </button>
+    </div>
+  </div>
+  

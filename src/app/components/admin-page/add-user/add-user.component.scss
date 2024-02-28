@@ -1,0 +1,63 @@
+/* add-user.component.scss */
+
+.add-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add-button {
+    margin-bottom: 20px;
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #2980b9; /* Darker blue on hover */
+    }
+  }
+  
+  .user-list-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add-user-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+  
+    label {
+      margin-bottom: 5px;
+    }
+  
+    input {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color: #3498db; /* Blue background color */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #2980b9; /* Darker blue on hover */
+      }
+    }
+  }
+  

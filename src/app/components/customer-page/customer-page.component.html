@@ -1,0 +1,195 @@
+<mat-tab-group  id="tab-group" (selectedTabChange) = "switchView($event)">
+    <mat-tab label="Car"></mat-tab>
+    <mat-tab label="Motorcycle"></mat-tab>
+    <mat-tab label="Truck"></mat-tab>
+    <mat-tab label="Agriculture"></mat-tab>
+    <mat-tab label="Construction"></mat-tab>
+    <mat-tab label="Parts"></mat-tab>
+  </mat-tab-group>
+  
+<ng-container *ngIf = "view == 'Car'">
+<div class="car-form">
+    <h2>Find a Car</h2>
+    <form>
+      <!-- Add form fields based on the Car interface -->
+      <div class="form-group">
+        <label for="caroserie">Caroserie:</label>
+        <input type="text" id="caroserie" name="caroserie" placeholder="Enter caroserie" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="Enter brand" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="fuel">Fuel:</label>
+        <input type="text" id="fuel" name="fuel" placeholder="Enter fuel type" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Enter year" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="kilometres">Kilometres:</label>
+        <input type="number" id="kilometres" name="kilometres" placeholder="Enter kilometres" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</ng-container>
+
+  <ng-container *ngIf="view == 'Motorcycle'">
+  <div class="car-parts-form">
+    <h2>Find a Motorcycle</h2>
+    <form>
+      <!-- Add form fields based on the CarPart interface -->
+      <div class="form-group">
+        <label for="caroserie">Caroserie:</label>
+        <input type="text" id="Caroserie" name="Caroserie" placeholder="Enter Caroserie" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="Enter brand" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" placeholder="Enter type" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Enter year" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="kilometres">Kilometres:</label>
+        <input type="number" id="kilometres" name="kilometres" placeholder="Enter kilometres" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="view == 'Truck'">
+  <div class="car-parts-form">
+    <h2>Find a Truck</h2>
+    <form>
+      <!-- Add form fields based on the CarPart interface -->
+      <div class="form-group">
+        <label for="typeOfVehicle">Type of Vehicle:</label>
+        <input type="text" id="typeOfVehicle" name="typeOfVehicle" placeholder="Enter type of vehicle" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="Enter brand" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="Model">Model:</label>
+        <input type="text" id="model" name="model" placeholder="Enter model" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fuel">Fuel:</label>
+        <input type="text" id="fuel" name="fuel" placeholder="Enter fuel type" required>
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Enter year" required>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="view == 'Agriculture'">
+  <div class="car-parts-form">
+    <h2>Find a Agricultural Vehicle</h2>
+    <form>
+      <!-- Add form fields based on the CarPart interface -->
+      <div class="form-group">
+        <label for="typeOfVehicle">Type of Vehicle:</label>
+        <input type="text" id="typeOfVehicle" name="typeOfVehicle" placeholder="Enter type of vehicle" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="Enter brand" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" placeholder="Enter model" required>
+      </div>
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Enter year" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="view == 'Construction'">
+  <div class="car-parts-form">
+    <h2>Find a Construction Vehicle</h2>
+    <form>
+      <!-- Add form fields based on the CarPart interface -->
+      <div class="form-group">
+        <label for="typeOfVehicle">Type of Vehicle:</label>
+        <input type="text" id="typeOfVehicle" name="typeOfVehicle" placeholder="Enter type of vehicle" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="Enter brand" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" placeholder="Enter model" required>
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Enter year" required>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="view == 'Parts'">
+  <div class="car-parts-form">
+    <h2>Find a Car Part</h2>
+    <form>
+      <!-- Add form fields based on the CarPart interface -->
+      <div class="form-group">
+        <label for="typeOfVehicle">Type of Vehicle:</label>
+        <input type="text" id="typeOfVehicle" name="typeOfVehicle" placeholder="Enter type of vehicle" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="Enter brand" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" placeholder="Enter type" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</ng-container>
+
+  

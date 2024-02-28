@@ -1,0 +1,17 @@
+<body>
+    <div class="container">
+      <h1>Car and Car Parts Shop</h1>
+      <div class="login-form">
+        <form [formGroup]="loginForm" (ngSubmit) = "goToPage()">
+          <label for="username">Username: </label>
+          <input type="text" id="username" />
+          <label for="password">Password:</label>
+          <input type="password" id="password" />
+          <div class="buttons">
+            <button type="submit" (click) = "goToPage()">Login</button>
+            <button class="change-password-btn" (click)="goToChangePassword()">Change password</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>

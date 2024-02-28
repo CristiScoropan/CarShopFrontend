@@ -1,0 +1,23 @@
+<!-- add-user.component.html -->
+
+<div class="add-user">
+    <button class="add-button" (click)="toggleFormVisibility()">Add User</button>
+    
+    <div class="user-list-form-container">
+  
+      <form *ngIf="isFormVisible" class="add-user-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="newUser.username" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="newUser.email" required>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="newUser.password" required>
+  
+        <button type="button" (click)="addUser()">Add User</button>
+        <button type="button" (click)="cancelAddUser()">Cancel</button>
+      </form>
+    </div>
+  </div>
+  
